@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    :root {
+    --primary-bg: rgba(44,62,80 ,1);
+        --secondary-bg: rgba(0,0,0,0.9);
+        --box-shadow-color-1: gold;
+        --box-shadow-color-2: rgba(149,165,166 ,0.1);
+        --box-shadow-color-3: #ecf0f1;
+        --phone-width: 350px;
+        --phone-height: 700px;
+    }
+
+    body {
+        background-color: black;
+    }
+    
+    #secondary-frame {
+        margin: 100px auto;
+        background-color: var(--secondary-bg);
+        position: relative;
+        box-shadow: 4px 10px 10px var(--box-shadow-color-2), inset 1px 1px var(--box-shadow-color-1);
+        width: var(--phone-width);
+        height: var(--phone-height);
+        border-radius: 5%;
+    }
+    
+    #primary-frame {
+        background-color: var(--primary-bg);
+        position: absolute;
+        top: 70px;
+        left: 25px;
+        width: 300px;
+        height: 560px;
+        border-radius: 2%;
+    }
+    
+
+    #home-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--secondary-bg);
+        position: absolute;
+        box-shadow: 1px -1px var(--box-shadow-color-3), inset 1px -1px var(--box-shadow-color-1);
+        bottom: 8px;
+        left: 45%;
+    }
+
+    .circle {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--primary-bg);
+        position: absolute;
+    }
+
+    #circle-top {    
+        top: 10px;
+        left: 50%;
+    }
+
+    #circle-left {
+        top: 29px;
+        left: 38%;
+    }
+
+    #front {
+        width: 50px;
+        height: 8px;
+        border-radius: 20%;
+        background-color: var(--primary-bg);
+        position: absolute;
+        top: 30px;
+        left: 45%;
+    }
+    </style>
+
+</head>
+<body>
+    <div id="secondary-frame">
+        <div id="primary-frame"></div>
+        <a href="#" id="home-button"></a>
+        <a href="#" class="circle" id="circle-top"></a>
+        <a href="#" class="circle" id="circle-left"></a>
+        <a href="#" id="front"></a>
+    </body>
+    </div>
+</html>
